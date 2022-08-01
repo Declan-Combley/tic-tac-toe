@@ -16,15 +16,15 @@ typedef struct Board {
 
 void populate_board(Board *Board)
 {
-    Board->top_left      = '1';  
-    Board->top_middle    = '2';  
-    Board->top_right     = '3';  
-    Board->middle_left   = '4';  
-    Board->middle_middle = '5';  
-    Board->middle_right  = '6';  
-    Board->bottom_left   = '7';  
-    Board->bottom_middle = '8';  
-    Board->bottom_right  = '9';  
+    Board->top_left      = ' ';  
+    Board->top_middle    = ' ';  
+    Board->top_right     = ' ';  
+    Board->middle_left   = ' ';  
+    Board->middle_middle = ' ';  
+    Board->middle_right  = ' ';  
+    Board->bottom_left   = ' ';  
+    Board->bottom_middle = ' ';  
+    Board->bottom_right  = ' ';  
 }
 
 void display_board(const Board board)
