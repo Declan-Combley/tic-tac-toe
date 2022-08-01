@@ -64,15 +64,15 @@ void update_board(char i, int *itter, Board *board)
     if (*itter % 2 != 0) {
         c = 'O';
         
-        if      (pos == 1 && board->top_left      != 'O' && board->top_left      != 'X') { board->top_left      = c; }
-        else if (pos == 2 && board->top_middle    != 'O' && board->top_middle    != 'X') { board->top_middle    = c; }
-        else if (pos == 3 && board->top_right     != 'O' && board->top_right     != 'X') { board->top_right     = c; }
-        else if (pos == 4 && board->middle_left   != 'O' && board->middle_left   != 'X') { board->middle_left   = c; }
-        else if (pos == 5 && board->middle_middle != 'O' && board->middle_middle != 'X') { board->middle_middle = c; }
-        else if (pos == 6 && board->middle_right  != 'O' && board->middle_right  != 'X') { board->middle_right  = c; }
-        else if (pos == 7 && board->bottom_left   != 'O' && board->bottom_left   != 'X') { board->bottom_left   = c; }
-        else if (pos == 8 && board->bottom_middle != 'O' && board->bottom_middle != 'X') { board->bottom_middle = c; }
-        else if (pos == 9 && board->bottom_right  != 'O' && board->bottom_right  != 'X') { board->bottom_right  = c; }
+        if      (pos == 1 && board->top_left      != 'X') { board->top_left      = c; }
+        else if (pos == 2 && board->top_middle    != 'X') { board->top_middle    = c; }
+        else if (pos == 3 && board->top_right     != 'X') { board->top_right     = c; }
+        else if (pos == 4 && board->middle_left   != 'X') { board->middle_left   = c; }
+        else if (pos == 5 && board->middle_middle != 'X') { board->middle_middle = c; }
+        else if (pos == 6 && board->middle_right  != 'X') { board->middle_right  = c; }
+        else if (pos == 7 && board->bottom_left   != 'X') { board->bottom_left   = c; }
+        else if (pos == 8 && board->bottom_middle != 'X') { board->bottom_middle = c; }
+        else if (pos == 9 && board->bottom_right  != 'X') { board->bottom_right  = c; }
         else {
             printf("\nCannot Place A Character There\nTry Again\n");
             system("sleep 1.5");
@@ -81,15 +81,15 @@ void update_board(char i, int *itter, Board *board)
     } else {
         c = 'X';
 
-        if      (pos == 1 && board->top_left      != 'O' && board->top_left      != 'X') { board->top_left      = c; }
-        else if (pos == 2 && board->top_middle    != 'O' && board->top_middle    != 'X') { board->top_middle    = c; }
-        else if (pos == 3 && board->top_right     != 'O' && board->top_right     != 'X') { board->top_right     = c; }
-        else if (pos == 4 && board->middle_left   != 'O' && board->middle_left   != 'X') { board->middle_left   = c; }
-        else if (pos == 5 && board->middle_middle != 'O' && board->middle_middle != 'X') { board->middle_middle = c; }
-        else if (pos == 6 && board->middle_right  != 'O' && board->middle_right  != 'X') { board->middle_right  = c; }
-        else if (pos == 7 && board->bottom_left   != 'O' && board->bottom_left   != 'X') { board->bottom_left   = c; }
-        else if (pos == 8 && board->bottom_middle != 'O' && board->bottom_middle != 'X') { board->bottom_middle = c; }
-        else if (pos == 9 && board->bottom_right  != 'O' && board->bottom_right  != 'X') { board->bottom_right  = c; }
+        if      (pos == 1 && board->top_left      != 'O') { board->top_left      = c; }
+        else if (pos == 2 && board->top_middle    != 'O') { board->top_middle    = c; }
+        else if (pos == 3 && board->top_right     != 'O') { board->top_right     = c; }
+        else if (pos == 4 && board->middle_left   != 'O') { board->middle_left   = c; }
+        else if (pos == 5 && board->middle_middle != 'O') { board->middle_middle = c; }
+        else if (pos == 6 && board->middle_right  != 'O') { board->middle_right  = c; }
+        else if (pos == 7 && board->bottom_left   != 'O') { board->bottom_left   = c; }
+        else if (pos == 8 && board->bottom_middle != 'O') { board->bottom_middle = c; }
+        else if (pos == 9 && board->bottom_right  != 'O') { board->bottom_right  = c; }
 
         else {
             printf("\nCannot Place A Character There\nTry Again\n");
